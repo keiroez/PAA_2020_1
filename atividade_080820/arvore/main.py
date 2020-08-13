@@ -6,7 +6,7 @@ ab.insereABB(ab.raiz, No(5))
 ab.insereABB(ab.raiz, No(15))
 ab.insereABB(ab.raiz, No(13))
 ab.insereABB(ab.raiz, No(11))
-ab.insereABB(ab.raiz, No(1))
+ab.insereABB(ab.raiz, No(111))
 ab.insereABB(ab.raiz, No(3))
 ab.insereABB(ab.raiz, No(100))
 ab.insereABB(ab.raiz, No(84))
@@ -30,10 +30,15 @@ mostrar()
 
 
 # print(ab.buscaABB(ab.raiz, 15))
-ab.removeABB(ab.raiz, 5)
+# ab.removeABB(ab.raiz, 5)
 
-print("=====================")
-mostrar()
+# print("=====================")
+# mostrar()
+
+print("Menor valor: " + str(ab.menorValor(ab.raiz).valor))
+print("Maior valor: " + str(ab.maiorValor(ab.raiz).valor))
+print("Sucessor: " + str(ab.sucessor(ab.raiz).valor))
+print("Predecessor: " + str(ab.predecessor(ab.raiz).valor))
 
 # print(ab.raiz.esquerdo.valor)
 # print(ab.raiz.direito.valor)
