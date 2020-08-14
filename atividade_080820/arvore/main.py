@@ -1,22 +1,7 @@
 from arvore.arvoreBinaria import ArvoreBinaria, No
 
-ab = ArvoreBinaria(10)
 
-ab.insereABB(ab.raiz, No(5))
-ab.insereABB(ab.raiz, No(15))
-ab.insereABB(ab.raiz, No(13))
-ab.insereABB(ab.raiz, No(11))
-ab.insereABB(ab.raiz, No(111))
-ab.insereABB(ab.raiz, No(3))
-ab.insereABB(ab.raiz, No(100))
-ab.insereABB(ab.raiz, No(84))
-
-def imprimir(raiz):
-    while raiz is not None:
-        print(raiz.valor)
-        raiz = raiz.esquerdo
-
-def mostrar(nivel=1,noArvore=None):
+def mostrar(nivel=1,noArvore=None, ab=None):
         if (noArvore is None):
             noArvore = ab.raiz
         arrow = "---" * nivel
@@ -26,23 +11,47 @@ def mostrar(nivel=1,noArvore=None):
         if (noArvore.direito is not None):
             mostrar(nivel+1,noArvore.direito)
 
-mostrar()
+def testeArvore():
+    ab = ArvoreBinaria(10)  #Instanciando a arvore com a raiz tendo valor 10
 
+    ab.insereABB(ab.raiz, No(5))
+    ab.insereABB(ab.raiz, No(15))
+    ab.insereABB(ab.raiz, No(13))
+    ab.insereABB(ab.raiz, No(11))   #Inserindo novos nós na arvores
+    ab.insereABB(ab.raiz, No(111))
+    ab.insereABB(ab.raiz, No(3))
+    ab.insereABB(ab.raiz, No(100))
+    ab.insereABB(ab.raiz, No(84))
 
-# print(ab.buscaABB(ab.raiz, 15))
-# ab.removeABB(ab.raiz, 5)
+    print("Valores inicias na arvore:")
+    mostrar(ab=ab)
+    print()
 
-# print("=====================")
-# mostrar()
+    print("Buscando valor 15 na arvore:")
+    print(ab.buscaABB(ab.raiz, 15))
+    print()                                     #Teste de busca
+    print("Buscando valor 101 na arvore:")
+    print(ab.buscaABB(ab.raiz, 101))
+    print()
 
-print("Menor valor: " + str(ab.menorValor(ab.raiz).valor))
-print("Maior valor: " + str(ab.maiorValor(ab.raiz).valor))
-print("Sucessor: " + str(ab.sucessor(ab.raiz).valor))
-print("Predecessor: " + str(ab.predecessor(ab.raiz).valor))
+    ab.removeABB(ab.raiz, 5)
+    ab.removeABB(ab.raiz, 11)                   #Teste de remoção
+    ab.removeABB(ab.raiz, 3)
+    print("Aŕvore com elementos Removidos")
+    mostrar(ab=ab)
+    print()
 
-# print(ab.raiz.esquerdo.valor)
-# print(ab.raiz.direito.valor)
-# print(ab.raiz.direito.esquerdo)
+    ab.insereABB(ab.raiz, No(555))
+    ab.insereABB(ab.raiz, No(104))              #Inserindo novos elementos
+    ab.insereABB(ab.raiz, No(432))
+    ab.insereABB(ab.raiz, No(7))
+    ab.insereABB(ab.raiz, No(9))
+    print("Árvore com novos elementos")
+    mostrar(ab=ab)
+    print()
 
-
+    print("Menor valor: " + str(ab.menorValor(ab.raiz).valor))
+    print("Maior valor: " + str(ab.maiorValor(ab.raiz).valor))
+    print("Sucessor: " + str(ab.sucessor(ab.raiz).valor))
+    print("Predecessor: " + str(ab.predecessor(ab.raiz).valor))
 
