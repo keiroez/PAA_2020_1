@@ -1,4 +1,4 @@
-from listaSimples.listasimples import ListaSimples
+from activitys.activity_140820_aed.listaSimples.listasimples import ListaSimples
 
 def imprimir(lista):
     x = lista.cabeca

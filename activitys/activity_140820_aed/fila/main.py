@@ -1,4 +1,4 @@
-from fila.fila_lse import Fila_lse
+from activitys.activity_140820_aed.fila.fila_lse import Fila_lse
 
 def imprimir(lista):
     x = lista.cabeca

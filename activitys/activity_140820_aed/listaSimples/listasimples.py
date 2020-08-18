@@ -1,4 +1,4 @@
-from listaSimples.no import No
+from activitys.activity_140820_aed.listaSimples.no import No
 
 class ListaSimples:
     def __init__(self, valor):  #construtor recebendo um valor para iniciar o nó

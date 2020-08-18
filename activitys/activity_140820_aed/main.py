@@ -1,7 +1,7 @@
-from arvore.main import testeArvore
-from fila.main import testeFila
-from heap.main import testeHeap
-from listaSimples.main import testeListaSimples
+from activitys.activity_140820_aed.arvore.main import testeArvore
+from activitys.activity_140820_aed.fila.main import testeFila
+from activitys.activity_140820_aed.heap.main import testeHeap
+from activitys.activity_140820_aed.listaSimples.main import testeListaSimples
 
 print("LISTA SIMPLES ENCADEADA")
 testeListaSimples()

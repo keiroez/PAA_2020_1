@@ -1,4 +1,4 @@
-from listaSimples.listasimples import ListaSimples
+from activitys.activity_140820_aed.listaSimples.listasimples import ListaSimples
 
 class Fila_lse:
     def __init__(self, valor):              #Construtor iniciando lista com um valor

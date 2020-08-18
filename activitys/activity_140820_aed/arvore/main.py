@@ -1,4 +1,4 @@
-from arvore.arvoreBinaria import ArvoreBinaria, No
+from activitys.activity_140820_aed.arvore.arvoreBinaria import ArvoreBinaria, No
 
 
 def mostrar(nivel=1,noArvore=None, ab=None):

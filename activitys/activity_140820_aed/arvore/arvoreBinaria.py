@@ -1,4 +1,4 @@
-from arvore.no import No
+from activitys.activity_140820_aed.arvore.no import No
 
 
 class ArvoreBinaria:

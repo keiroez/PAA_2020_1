@@ -1,4 +1,4 @@
-from heap.heapbinario import HeapBinario
+from activitys.activity_140820_aed.heap.heapbinario import HeapBinario
 
 def testeHeap():
     vetor = [100, 3, 36, 17, 108, 25, 13, 7, 12, 5]
