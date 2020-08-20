@@ -11,3 +11,6 @@ Atividades:
 >>>Obs: (1) Implementem preferencialmente em Python.
          (2) Carreguem em um único arquivo todos os programas (classes, etc) com documentação em comentários.
          (3) Incluir testes.
+
+>21/08/2020:
+>>2. Ler e implementar os algoritmos da Parte III do [livro](http://professor.ufabc.edu.br/~carla.negri/cursos/materiais/Livro-Analise.de.Algoritmos.pdf) da Carla Negri Lintzmayer: Capítulos 13 a 17.
