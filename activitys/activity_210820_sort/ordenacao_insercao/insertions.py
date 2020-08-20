@@ -6,7 +6,7 @@ def insertionSort(vetor):
     for i in range(2, n):
         atual = vetor[i]
         j = i - 1
-        while j>0 and vetor[j]>atual:
+        while j>0 and vetor[j]>atual:       #Move os elementos menores para o inicio do vetor
             vetor[j+1] = vetor[j]
             j = j - 1
         vetor[j+1] = atual
@@ -16,7 +16,7 @@ def insertionSort(vetor):
 def shellsort(vetor):
     inicio = (time.time() * 1000)
     n = len(vetor)
-    gap = n//2
+    gap = n//2          #Começa com um grande pedaço do vetor e vai diminuindo ordenando-os
 
     while gap > 0:
         for i in range(gap, n):

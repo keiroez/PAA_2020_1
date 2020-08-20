@@ -2,14 +2,16 @@ import time
 
 def countingSort(vetor, k):
 
-    B = k + 1
-    C = [0] * B
 
-    for i in vetor:
+    B = k + 1           #Maior valor do vetor
+    C = [0] * B         #Inicializa vetor com quantidades de zeros igual ao maior valor do vetor
+
+    for i in vetor:     #Encontra a quantidade de ocorrências de cada elemento e seta 1 na sua posição
         C[i] += 1
+
     i = 0
 
-    for a in range(B):
+    for a in range(B):  #Restaura os valores com ocorrências para o vetor original em ordem
         for c in range(C[a]):
             vetor[i] = a
             i += 1
@@ -27,4 +29,4 @@ def exampleLinear():
     print(vetor)
     print("Tempo: " + str(round(fim - inicio, 4)) + " ms")
 
-
+exampleLinear()
