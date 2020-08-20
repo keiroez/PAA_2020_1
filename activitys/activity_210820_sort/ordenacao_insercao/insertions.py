@@ -32,13 +32,16 @@ def shellsort(vetor):
     fim = (time.time() * 1000)
     return str(round(fim - inicio, 4))
 
-def exampleInsertions():
-    v = [4, 6, 2, 60, 10, 33, 88, 9]
-    v2 = [4, 6, 2, 60, 10, 33, 88, 9]
+def exampleInsertions(v, v2):
+    # v = [4, 6, 2, 60, 10, 33, 88, 9]
+    # v2 = [4, 6, 2, 60, 10, 33, 88, 9]
 
     tempo = insertionSort(v)
     print("INSERTIONSORT")
+    print(v)
     print(" Tempo: "+ tempo + " ms")
+
+
     print()
 
     print("SHELLSORT")

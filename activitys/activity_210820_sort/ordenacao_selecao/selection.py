@@ -1,5 +1,5 @@
 import time
-from activitys.activity_140820_aed.heap.heapbinario import HeapBinario
+from activitys.activity_210820_sort.ordenacao_selecao.heapbinario import HeapBinario
 def selectionSort(vetor):
 
     for i in range(len(vetor)):     #Encontrando o menor valor no vetor
@@ -24,30 +24,26 @@ def heapsort(vetor):
 
 
 
-def exampleIntercalations():
-    vetor = [99, 55, 33, 109, 23, 89, 21, 2, 30, 55, 78, 90, 400]
-
-    print("Vetor inicial:")
-    print(vetor)
-    print()
+def exampleSelection(vetor, vetor2):
+    # vetor = [99, 55, 33, 109, 23, 89, 21, 2, 30, 55, 78, 90, 400]
+    #
+    # print("Vetor inicial:")
+    # print(vetor)
+    # print()
 
     print("SELECTIONSORT")
     inicio = (time.time() * 1000)
     selectionSort(vetor)
     fim = (time.time() * 1000)
-    print("Vetor ordenado:")
     print(vetor)
     print("Tempo: "+ str(round(fim - inicio, 4))+" ms")
 
     print()
 
     print("HEAPSORT")
-    vetor2 = [99, 55, 33, 109, 23, 89, 21, 2, 30, 55, 78, 90, 400]
+    # vetor2 = [99, 55, 33, 109, 23, 89, 21, 2, 30, 55, 78, 90, 400]
     inicio = (time.time() * 1000)
     heapsort(vetor2)
     fim = (time.time() * 1000)
-    print("Vetor ordenado:")
     print(vetor2)
     print("Tempo: " + str(round(fim - inicio, 4)) + " ms")
-
-exampleIntercalations()

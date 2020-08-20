@@ -17,16 +17,14 @@ def countingSort(vetor, k):
             i += 1
 
 
-def exampleLinear():
-    vetor = [99, 55, 33, 109, 23, 89, 21, 2, 30, 55, 78, 90, 400]
-    print("Vetor inicial:")
-    print(vetor)
+def exampleLinear(vetor):
+    # vetor = [99, 55, 33, 109, 23, 89, 21, 2, 30, 55, 78, 90, 400]
+    # print("Vetor inicial:")
+    # print(vetor)
     inicio = (time.time() * 1000)
     countingSort(vetor, 400)
     fim = (time.time() * 1000)
-    print()
-    print("Vetor ordenado:")
+    print("COUNTINGSORT")
     print(vetor)
     print("Tempo: " + str(round(fim - inicio, 4)) + " ms")
 
-exampleLinear()

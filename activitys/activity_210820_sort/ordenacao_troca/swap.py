@@ -21,13 +21,12 @@ def quicksort(vetor, inicio, fim):
 
 
 
-def exampleSwap():
-    vetor = [99, 55, 33, 109, 23, 89, 21, 2, 30, 55, 78, 90, 400]
+def exampleSwap(vetor):
+    # vetor = [99, 55, 33, 109, 23, 89, 21, 2, 30, 55, 78, 90, 400]
 
     print("QUICKSORT")
     inicio = (time.time() * 1000)
     quicksort(vetor, 0, len(vetor) - 1)
     fim = (time.time() * 1000)
-    print("Vetor ordenado:")
     print(vetor)
     print("Tempo: " + str(round(fim - inicio, 4)) + " ms")
