@@ -53,5 +53,4 @@ def exemploDivisionAndConquest():
     fim = (time.time() * 1000)
     print("Tempo: " + str(round(fim - inicio, 4)))
 
-exemploDivisionAndConquest()
 
